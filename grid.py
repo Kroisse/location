@@ -17,8 +17,5 @@ for x in range(int((lng[1]-lng[0])*10)):
 
 locs = [(x, y) for x in arrLat for y in arrLng if x != y]  
 
-i = 0
-
-for loc in reversed(locs):
-    i += 1
-    print i, loc
+for i, loc in enumerate(reversed(locs)):
+    print i + 1, loc
